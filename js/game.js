@@ -18,6 +18,9 @@ function start(){ // apc = amount per card
   Deck[Deck.length] = "Inquisitor";
   Deck = shuffle(Deck);
   console.log(Deck);
+  var player1 = new player(Deck.slice(0, 2));
+  player1.coins = player1.cards[0].Tax(player1.coins);
+  console.log(player1.coins);
 }
 function shuffle(a) {
     var j, x, i;

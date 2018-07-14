@@ -15,32 +15,32 @@ Card = function(type){ //add paramiter img
         //Ambassador
     }
     //Actions
-    function Income(coins) {
+    this.Income = function(coins) {
       coins++;
       return coins
     }
-    function FA(coins, Duke) {
+    this.FA = function(coins, Duke) {
       coins += 2;
       return coins
     }
-    function Coup(coins, player){
+    this.Coup = function(coins, player){
       if (coins >= 7){
         coins -= 7;
         //flip card
       }
     }
-    function Tax(coins){
+    this.Tax = function(coins){
       coins += 3;
       return coins
     }
-    function kill(coins, player, Contessa){
+    this.Kill = function(coins, player, Contessa){
       coins -= 3;
       //flip card
     }
-    function Draw(){
+    this.Draw = function(){
       //Draw
     }
-    function Steal(coins, player){
+    this.Steal = function(coins, player){
       coins += 2;
       //- 2 coins
       return coins //return array with coins and player.coins
