@@ -1,7 +1,10 @@
 function start(){ // apc = amount per card
   var apc = parseInt(document.getElementById("apc").value);
+  var GameArea = document.getElementById("GameArea")
+  console.log(GameArea);
+  var Tax = document.getElementById("Tax");
+  console.log(Tax);
   Deck = [];
-  console.log(apc);
   for (i = 0; i < apc * 5; i++){
     if (i < apc){
       Deck[i] = "Duke";
@@ -17,10 +20,8 @@ function start(){ // apc = amount per card
   }
   Deck[Deck.length] = "Inquisitor";
   Deck = shuffle(Deck);
-  console.log(Deck);
   var player1 = new player(Deck.slice(0, 2));
   player1.coins = player1.cards[0].Tax(player1.coins);
-  console.log(player1.coins);
 }
 function shuffle(a) {
     var j, x, i;

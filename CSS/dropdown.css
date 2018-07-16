@@ -3,11 +3,10 @@
   display: inline-block;
 }
 #dropdownMenu {
-  display: none;;
-  position: absolute;;
+  display: none;
+  position: absolute;
 }
-/*#dropdownMenu p{
-  text-align: right;
+#dropdownMenu p {
+  text-align: left;
 }
-*/
 #action_dropdown:hover #dropdownMenu{display: block;}
