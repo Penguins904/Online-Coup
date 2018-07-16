@@ -2,6 +2,7 @@ var start = false;
 var player1;
 window.addEventListener("message", function(event){
   if (event.origin.indexOf("Penguins904.github.io")){
+    console.log("true");
     var apc = event.data
     var Deck = [];
     for (i = 0; i < apc * 5; i++){
