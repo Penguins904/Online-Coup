@@ -22,7 +22,24 @@ window.addEventListener("message", function(event){
     document.getElementById("coinsLbl").innerHTML = "Coins: " + player1.coins.toString();
   }
   });
+function Action(id){
+  var action = document.getElementById(id).innerHTML;
+  switch (action) {
+    case "Income":
 
+    case "Foreign Aid":
+
+    case "Coup":
+
+    case "Tax":
+
+    case "Steal":
+
+    case "Draw":
+
+    case "Assassinate":
+  }
+}
 function shuffle(a) {
     var j, x, i;
     for (i = a.length - 1; i > 0; i--) {
