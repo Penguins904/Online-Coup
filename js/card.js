@@ -19,7 +19,7 @@ Card = function(type){ //add paramiter img
       coins++;
       return coins
     }
-    this.FA = function(coins, Duke) {
+    this.Foreign_Aid = function(coins, Duke) {
       coins += 2;
       return coins
     }
@@ -33,7 +33,7 @@ Card = function(type){ //add paramiter img
       coins += 3;
       return coins
     }
-    this.Kill = function(coins, player, Contessa){
+    this.Assassinate = function(coins, player, Contessa){
       coins -= 3;
       //flip card
     }

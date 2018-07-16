@@ -81,6 +81,12 @@
       top: 562px;
     }
   </style>
+  <script type="text/javascript" gwd-events="handlers">
+    window.gwd = window.gwd || {};
+    gwd.assassinate = function(event) {
+      player.cards[0].assassinate()
+    };
+  </script>
 </head>
 
 <body class="htmlNoPages">
@@ -90,20 +96,20 @@
   <img class="gwd-img-1puk gwd-img-rihj gwd-img-12v8">
   <img class="gwd-img-1puk gwd-img-rihj gwd-img-j6rx">
   <div id="action_dropdown" class="gwd-div-20po">
-    <buttion id="actionBtn" class="gwd-buttion-pp70" style="text-align:center;">Actions
-      <div id="dropdownMenu">
-        <p id= "Income">Income</p>
-        <p id= "Foreign Aid">Foreign Aid</p>
-        <p id= "Tax">Tax</p>
-        <p id= "Coup">Coup</p>
-        <p id= "Steal">Steal</p>
-        <p id= "Draw">Draw</p>
-        <p id= "Assassinate">Assassinate</p>
-      </div>
-    </buttion>
+  <buttion id="actionBtn" class="gwd-buttion-pp70" style="text-align: center;">Actions
+    <div id="dropdownMenu">
+    <p id="Income", onclick="player1.cards[0].Income()">Income</p>
+    <p id="Foreign Aid", onclick="player1.cards[0].Foreign_Aid()">Foreign Aid</p>
+    <p id="Tax", onclick="player1.cards[0].Tax()">Tax</p>
+    <p id="Coup", onclick="player1.cards[0].Coup()">Coup</p>
+    <p id="Steal", onclick="player1.cards[0].Steal()">Steal</p>
+    <p id="Draw", onclick="player1.cards[0].Draw()">Draw</p>
+    <p id="Assassinate", onclick="player1.cards[0].Assassinate()">Assassinate</p>
+    </div>
+  </buttion>
   </div>
   <button class="gwd-button-mm3o" id="block">Block</button>
-  <p class="gwd-p-1kj3", id="coinsLbl">Coins: 2</p>
+  <p class="gwd-p-1kj3" ,="" id="coinsLbl">Coins: 2</p>
 </body>
 
 </html>
