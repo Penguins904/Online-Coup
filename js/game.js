@@ -1,8 +1,7 @@
 window.addEventListener("message", function(event){
+  console.log("recived");
   if (~event.origin.indexOf("Penguins904.github.io")){
-    var Tax = document.getElementById("Tax");
-    console.log(Tax);
-    Deck = [];
+    var Deck = [];
     for (i = 0; i < apc * 5; i++){
       if (i < apc){
         Deck[i] = "Duke";
