@@ -1,3 +1,5 @@
+var start = false;
+var player1;
 window.addEventListener("message", function(event){
   if (event.origin.indexOf("Penguins904.github.io")){
     var apc = event.data
@@ -17,8 +19,8 @@ window.addEventListener("message", function(event){
     }
     Deck[Deck.length] = "Inquisitor";
     Deck = shuffle(Deck);
-    var player1 = new player(Deck.slice(0, 2));
-    var start = true;
+    player1 = new player(Deck.slice(0, 2));
+    start = true;
   }
   });
 function Action(id){
