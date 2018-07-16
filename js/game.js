@@ -1,8 +1,5 @@
 window.addEventListener("message", function(event){
-  //
-  console.log("recived");
   if (event.origin.indexOf("Penguins904.github.io")){
-    console.log("passed if");
     var apc = event.data
     var Deck = [];
     for (i = 0; i < apc * 5; i++){
@@ -22,7 +19,7 @@ window.addEventListener("message", function(event){
     Deck = shuffle(Deck);
     var player1 = new player(Deck.slice(0, 2));
     player1.coins = player1.cards[0].Tax(player1.coins);
-    document.getElementById("coinsLbl").innerHTML = "Coins" + player1.coins.toString();
+    document.getElementById("coinsLbl").innerHTML = "Coins: " + player1.coins.toString();
   }
   });
 
