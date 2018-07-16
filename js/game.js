@@ -1,6 +1,7 @@
 window.addEventListener("message", function(event){
   console.log("recived");
   if (~event.origin.indexOf("Penguins904.github.io")){
+    console.log("passed if");
     var Deck = [];
     for (i = 0; i < apc * 5; i++){
       if (i < apc){
