@@ -18,28 +18,31 @@ window.addEventListener("message", function(event){
     Deck[Deck.length] = "Inquisitor";
     Deck = shuffle(Deck);
     var player1 = new player(Deck.slice(0, 2));
+    var start = true;
   }
   });
 function Action(id){
   var action = document.getElementById(id).innerHTML;
-  switch (action) {
-    case "Income":
-      player1.coins = player1.cards[0].Income(player1.coins);
-      updateCoinLbl();
-    case "Foreign Aid":
-      player1.coins = player1.cards[0].Foreign_Aid(player1.coins);
-      updateCoinLbl();
-    case "Coup":
+  if (start) {
+    switch (action) {
+      case "Income":
+        player1.coins = player1.cards[0].Income(player1.coins);
+        updateCoinLbl();
+      case "Foreign Aid":
+        player1.coins = player1.cards[0].Foreign_Aid(player1.coins);
+        updateCoinLbl();
+      case "Coup":
+        console.log("func not done yet");
+      case "Tax":
+        player1.coins = player.cards[0].Tax(player1.coins);
+        updateCoinLbl();
+      case "Steal":
       console.log("func not done yet");
-    case "Tax":
-      player1.coins = player.cards[0].Tax(player1.coins);
-      updateCoinLbl();
-    case "Steal":
-    console.log("func not done yet");
-    case "Draw":
-    console.log("func not done yet");
-    case "Assassinate":
-    console.log("func not done yet");
+      case "Draw":
+      console.log("func not done yet");
+      case "Assassinate":
+      console.log("func not done yet");
+    }
   }
 }
 function updateCoinLbl() {
