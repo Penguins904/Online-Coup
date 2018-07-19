@@ -1,0 +1,31 @@
+{
+  "name": "online-coup",
+  "version": "0.0.1",
+  "description": "Online Coup",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Penguins904/Online-Coup.git"
+  },
+  "keywords": [
+    "heroku"
+  ],
+  "author": "Jake Jenkins",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Penguins904/Online-Coup/issues"
+  },
+  "homepage": "https://github.com/Penguins904/Online-Coup#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "socketio": "^1.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.3"
+  }
+}
