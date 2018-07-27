@@ -2,15 +2,15 @@ var socket = io();
 var start = false;
 var player1;
 window.addEventListener("message", function(event){
-  if (event.origin.indexOf("localhost" || "https://online-coup.herokuapp.com/")){
-    var name = event.data
+  if (event.origin.indexOf("localhost" || "https://online-coup.herokuapp.com")){
+    var name = event.data;
+    console.log("test");
     socket.on("ready", function (string) {
       console.log(string);
     });
     socket.on("waiting", function(string) {
       console.log(string);
     });
-    socket.emit("test", "");
   }
   });
 function Action(id){

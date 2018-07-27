@@ -16,9 +16,7 @@ const io = socketio(server);
 var waiting = null;
 io.on("connection", function (socket) {
   console.log("User connected");
-  socket.on("test", function(data) {
-    console.log("test");
-  });
+
   if (waiting) {
     new Coup(waiting, socket);
   } else {
