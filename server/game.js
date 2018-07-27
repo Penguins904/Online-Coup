@@ -1,7 +1,7 @@
 class Coup {
   constructor(p1, p2) {
     this.players = [p1, p2];
-    sendToAll("ready", "log")
+    this.sendToAll("ready", "log")
   }
 
   sendToAll(event, message) {
@@ -9,10 +9,6 @@ class Coup {
       player.emit(event, message)
     });
   }
-
-
-
-
-
-
 }
+
+module.exports = Coup;
